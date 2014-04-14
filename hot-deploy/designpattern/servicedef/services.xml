@@ -9,6 +9,12 @@
         <description>
             Dummy service to prevent empty files and syntax error - Remove when the 1st real service will be added here 
         </description>
-    </service> 
-    
+    </service>
+
+    <service name="introductionService" engine="java"
+             location="pattern.No1.MiniDuckSimulator" invoke="run" auth="true">
+        <description>introductionService</description>
+        <attribute type="String" mode="OUT" name="result" optional="false"/>
+    </service>
+
 </services>

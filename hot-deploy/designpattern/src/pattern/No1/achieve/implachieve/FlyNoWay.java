@@ -1,6 +1,6 @@
-package mangoo.No1.achieve.implachieve;
+package pattern.No1.achieve.implachieve;
 
-import mangoo.No1.main.impl.FlyBehavior;
+import pattern.No1.main.impl.FlyBehavior;
 
 /**
  * Created by root on 14-4-1.

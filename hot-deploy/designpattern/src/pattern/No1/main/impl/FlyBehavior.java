@@ -1,4 +1,4 @@
-package mangoo.No1.main.impl;
+package pattern.No1.main.impl;
 
 /**
  * 实现飞行行为的接口

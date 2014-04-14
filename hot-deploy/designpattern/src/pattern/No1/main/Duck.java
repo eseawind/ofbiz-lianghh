@@ -1,7 +1,7 @@
-package mangoo.No1.main;
+package pattern.No1.main;
 
-import mangoo.No1.main.impl.FlyBehavior;
-import mangoo.No1.main.impl.QuackBehavior;
+import pattern.No1.main.impl.FlyBehavior;
+import pattern.No1.main.impl.QuackBehavior;
 
 /**
  * 鸭子父类

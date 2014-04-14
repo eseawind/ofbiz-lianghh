@@ -1,8 +1,8 @@
-package mangoo.No1.achieve;
+package pattern.No1.achieve;
 
-import mangoo.No1.achieve.implachieve.FlyNoWay;
-import mangoo.No1.achieve.implachieve.Quack;
-import mangoo.No1.main.Duck;
+import pattern.No1.achieve.implachieve.FlyNoWay;
+import pattern.No1.achieve.implachieve.Quack;
+import pattern.No1.main.Duck;
 
 /**
  * Created by root on 14-4-1.

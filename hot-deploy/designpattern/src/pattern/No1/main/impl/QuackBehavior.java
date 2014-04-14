@@ -1,4 +1,4 @@
-package mangoo.No1.main.impl;
+package pattern.No1.main.impl;
 
 /**
  * 实现鸣叫行为的接口

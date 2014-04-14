@@ -1,2 +1,2 @@
-#ofbiz4china
-符合国人操作习惯的ofbiz版本
+#ofbiz-lianghh
+个人代码库

@@ -21,16 +21,12 @@ public class MiniDuckSimulator {
      */
     public static Map<String, Object> run(DispatchContext dctx, Map<String, ? extends Object> context) {
 
-        Map<String,Object> resultMap = FastMap.newInstance();
-
         Duck model = new ModelDuck();
         model.performFly();
         model.setFlyBehavior(new FlyRocketPowered());
         model.performFly();
 
-        resultMap.put("result","OK");
-
-        return resultMap;
+        return ServiceUtil.returnSuccess();
 
     }
 

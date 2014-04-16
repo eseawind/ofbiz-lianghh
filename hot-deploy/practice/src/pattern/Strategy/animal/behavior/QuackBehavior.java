@@ -1,4 +1,4 @@
-package pattern.No1.main.impl;
+package pattern.Strategy.animal.behavior;
 
 /**
  * 实现鸣叫行为的接口

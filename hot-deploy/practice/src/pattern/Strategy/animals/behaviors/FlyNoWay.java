@@ -1,6 +1,6 @@
-package pattern.No1.achieve.implachieve;
+package pattern.Strategy.animals.behaviors;
 
-import pattern.No1.main.impl.FlyBehavior;
+import pattern.Strategy.animal.behavior.*;
 
 /**
  * Created by root on 14-4-1.

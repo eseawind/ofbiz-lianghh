@@ -1,17 +1,15 @@
-package pattern.No1;
+package pattern.Strategy;
 
 import javolution.util.FastMap;
 import org.ofbiz.service.DispatchContext;
-import pattern.No1.achieve.MallardDuck;
-import pattern.No1.achieve.ModelDuck;
-import pattern.No1.achieve.implachieve.FlyRocketPowered;
-import pattern.No1.main.Duck;
-
 import java.lang.Object;
 import java.lang.String;
 import java.util.Map;
-
 import org.ofbiz.service.ServiceUtil;
+
+import pattern.Strategy.animal.*;
+import pattern.Strategy.animals.*;
+import pattern.Strategy.animals.behaviors.*;
 
 /**
  * Created by root on 14-4-1.

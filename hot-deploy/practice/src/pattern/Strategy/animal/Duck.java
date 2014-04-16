@@ -1,7 +1,6 @@
-package pattern.No1.main;
+package pattern.Strategy.animal;
 
-import pattern.No1.main.impl.FlyBehavior;
-import pattern.No1.main.impl.QuackBehavior;
+import pattern.Strategy.animal.behavior.*;
 
 /**
  * 鸭子父类

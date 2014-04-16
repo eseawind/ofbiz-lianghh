@@ -1,8 +1,8 @@
-package pattern.No1.achieve;
+package pattern.Strategy.animals;
 
-import pattern.No1.achieve.implachieve.FlyWithWings;
-import pattern.No1.achieve.implachieve.Quack;
-import pattern.No1.main.Duck;
+import pattern.Strategy.animal.*;
+import pattern.Strategy.animal.behavior.*;
+import pattern.Strategy.animals.behaviors.*;
 
 /**
  * 绿头鸭

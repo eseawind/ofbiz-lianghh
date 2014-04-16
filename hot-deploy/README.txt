@@ -1,1 +1,1 @@
-designpattern：设计模式相关代码
+practice：联系模式，算法的代码

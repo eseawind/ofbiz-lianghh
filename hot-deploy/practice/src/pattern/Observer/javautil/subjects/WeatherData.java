@@ -1,4 +1,4 @@
-package pattern.Observer.javautil.subjects;
+package pattern.observer.javautil.subjects;
 
 import java.util.Observable;
 

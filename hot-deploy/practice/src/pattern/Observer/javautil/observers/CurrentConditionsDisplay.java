@@ -1,7 +1,7 @@
-package pattern.Observer.javautil.observers;
+package pattern.observer.javautil.observers;
 
 import org.ofbiz.base.util.Debug;
-import pattern.Observer.javautil.subjects.WeatherData;
+import pattern.observer.javautil.subjects.WeatherData;
 
 import java.util.Observable;
 import java.util.Observer;

@@ -10,6 +10,11 @@
             <widgets>
                 <decorator-screen name="Skull-EcommerceCommonDecorator" location="${parameters.mainDecoratorLocation}">
                     <decorator-section name="body">
+                        <section>
+                            <widgets>
+                                <platform-specific><html><html-template location="component://skull-ecommerce/webapp/skull-ecommerce/main.ftl"/></html></platform-specific>
+                            </widgets>
+                        </section>
                     </decorator-section>
                 </decorator-screen>
             </widgets>

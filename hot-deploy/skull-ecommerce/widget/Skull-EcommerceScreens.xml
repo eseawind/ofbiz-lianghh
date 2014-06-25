@@ -4,15 +4,35 @@
 
     <screen name="main">
         <section>
-            <actions>
-                <set field="headerItem" value="main"/><!-- this highlights the selected menu-item with name "main" -->
-            </actions>
             <widgets>
                 <decorator-screen name="Skull-EcommerceCommonDecorator" location="${parameters.mainDecoratorLocation}">
                     <decorator-section name="body">
                         <section>
                             <widgets>
                                 <platform-specific><html><html-template location="component://skull-ecommerce/webapp/skull-ecommerce/main.ftl"/></html></platform-specific>
+                            </widgets>
+                        </section>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+
+    <screen name="listProducts">
+        <section>
+            <widgets>
+                <decorator-screen name="ProductListDecorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="left-options">
+                        <section>
+                            <widgets>
+                                <platform-specific><html><html-template location="component://skull-ecommerce/webapp/skull-ecommerce/productlist/left.ftl"/></html></platform-specific>
+                            </widgets>
+                        </section>
+                    </decorator-section>
+                    <decorator-section name="right-options">
+                        <section>
+                            <widgets>
+                                <platform-specific><html><html-template location="component://skull-ecommerce/webapp/skull-ecommerce/productlist/right.ftl"/></html></platform-specific>
                             </widgets>
                         </section>
                     </decorator-section>

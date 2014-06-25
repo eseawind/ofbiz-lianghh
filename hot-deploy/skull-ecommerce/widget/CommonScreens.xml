@@ -16,7 +16,7 @@
     <screen name="header">
         <section>
             <widgets>
-                <platform-specific><html><html-template location="component://skull-ecommerce/webapp/skull-ecommerce/includes/header.ftl"/></html></platform-specific>
+                <platform-specific><html><html-template location="component://skull-ecommerce/webapp/skull-ecommerce/header.ftl"/></html></platform-specific>
             </widgets>
         </section>
     </screen>
@@ -25,7 +25,7 @@
     <screen name="footer">
         <section>
             <widgets>
-                <platform-specific><html><html-template location="component://skull-ecommerce/webapp/skull-ecommerce/includes/footer.ftl"/></html></platform-specific>
+                <platform-specific><html><html-template location="component://skull-ecommerce/webapp/skull-ecommerce/footer.ftl"/></html></platform-specific>
             </widgets>
         </section>
     </screen>
@@ -55,7 +55,7 @@
     <screen name="SkullEcommerceCommonHeader">
         <section>
             <widgets>
-                <platform-specific><html><html-template location="component://skull-ecommerce/webapp/skull-ecommerce/includes/common/header.ftl"/></html></platform-specific>
+                <platform-specific><html><html-template location="component://skull-ecommerce/webapp/skull-ecommerce/common/header.ftl"/></html></platform-specific>
             </widgets>
         </section>
     </screen>
@@ -64,7 +64,7 @@
     <screen name="SkullEcommerceCommonFooter">
         <section>
             <widgets>
-                <platform-specific><html><html-template location="component://skull-ecommerce/webapp/skull-ecommerce/includes/common/footer.ftl"/></html></platform-specific>
+                <platform-specific><html><html-template location="component://skull-ecommerce/webapp/skull-ecommerce/common/footer.ftl"/></html></platform-specific>
             </widgets>
         </section>
     </screen>

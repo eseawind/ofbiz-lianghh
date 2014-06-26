@@ -46,14 +46,46 @@
     <!-- 产品列表页面左边 -->
     <screen name="listProducts-left">
         <section>
+            <widgets>
+                <include-screen name="listProducts-breadcrumb"/>
+                <include-screen name="listProducts-thumbnail"/>
+                <include-screen name="listProducts-pagination"/>
+            </widgets>
+        </section>
+    </screen>
 
+    <!-- 产品列表页面导航 -->
+    <screen name="listProducts-breadcrumb">
+        <section>
+            <widgets>
+                <platform-specific><html><html-template location="component://skull-ecommerce/webapp/skull-ecommerce/product/listProducts-breadcrumb.ftl"/></html></platform-specific>
+            </widgets>
+        </section>
+    </screen>
+
+    <!-- 产品列表页缩略图 -->
+    <screen name="listProducts-thumbnail">
+        <section>
+            <widgets>
+                <platform-specific><html><html-template location="component://skull-ecommerce/webapp/skull-ecommerce/product/listProducts-thumbnail.ftl"/></html></platform-specific>
+            </widgets>
+        </section>
+    </screen>
+
+    <!-- 产品列表页面分页 -->
+    <screen name="listProducts-pagination">
+        <section>
+            <widgets>
+                <platform-specific><html><html-template location="component://skull-ecommerce/webapp/skull-ecommerce/product/listProducts-pagination.ftl"/></html></platform-specific>
+            </widgets>
         </section>
     </screen>
 
     <!-- 产品列表页面右边 -->
     <screen name="listProducts-right">
         <section>
-
+            <widgets>
+            </widgets>
         </section>
     </screen>
 

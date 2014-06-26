@@ -41,8 +41,8 @@
                                 <include-screen name="SkullEcommerceCommonHeader"/>
                                 <container style="container">
                                     <decorator-section-include name="body"/>
-                                    <include-screen name="SkullEcommerceCommonFooter"/>
                                 </container>
+                                <include-screen name="SkullEcommerceCommonFooter"/>
                             </widgets>
                         </section>
                     </decorator-section>

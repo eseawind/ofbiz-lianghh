@@ -48,6 +48,7 @@
         <section>
             <widgets>
                 <include-screen name="listProducts-breadcrumb"/>
+                <include-screen name="listProducts-screening"/>
                 <include-screen name="listProducts-thumbnail"/>
                 <include-screen name="listProducts-pagination"/>
             </widgets>
@@ -59,6 +60,15 @@
         <section>
             <widgets>
                 <platform-specific><html><html-template location="component://skull-ecommerce/webapp/skull-ecommerce/product/listProducts-breadcrumb.ftl"/></html></platform-specific>
+            </widgets>
+        </section>
+    </screen>
+
+    <!-- 产品列表页筛选 -->
+    <screen name="listProducts-screening">
+        <section>
+            <widgets>
+                <platform-specific><html><html-template location="component://skull-ecommerce/webapp/skull-ecommerce/product/listProducts-screening.ftl"/></html></platform-specific>
             </widgets>
         </section>
     </screen>

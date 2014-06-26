@@ -2,6 +2,7 @@
 <screens xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/widget-screen.xsd">
 
+    <!-- 主页面 -->
     <screen name="main">
         <section>
             <widgets>
@@ -18,6 +19,7 @@
         </section>
     </screen>
 
+    <!-- 产品列表页面 -->
     <screen name="listProducts">
         <section>
             <widgets>
@@ -25,19 +27,33 @@
                     <decorator-section name="left-options">
                         <section>
                             <widgets>
-                                <platform-specific><html><html-template location="component://skull-ecommerce/webapp/skull-ecommerce/productlist/left.ftl"/></html></platform-specific>
+                                <include-screen name="listProducts-left"/>
                             </widgets>
                         </section>
                     </decorator-section>
                     <decorator-section name="right-options">
                         <section>
                             <widgets>
-                                <platform-specific><html><html-template location="component://skull-ecommerce/webapp/skull-ecommerce/productlist/right.ftl"/></html></platform-specific>
+                                <include-screen name="listProducts-right"/>
                             </widgets>
                         </section>
                     </decorator-section>
                 </decorator-screen>
             </widgets>
+        </section>
+    </screen>
+
+    <!-- 产品列表页面左边 -->
+    <screen name="listProducts-left">
+        <section>
+
+        </section>
+    </screen>
+
+    <!-- 产品列表页面右边 -->
+    <screen name="listProducts-right">
+        <section>
+
         </section>
     </screen>
 

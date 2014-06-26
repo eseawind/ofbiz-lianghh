@@ -26,7 +26,6 @@
     </request-map>
     <!-- product相关 -->
     <request-map uri="listProducts">
-        <security https="true" auth="true"/>
         <response name="success" type="view" value="listProducts"/>
     </request-map>
 

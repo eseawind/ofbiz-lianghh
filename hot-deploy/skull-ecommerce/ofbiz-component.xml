@@ -35,5 +35,5 @@
         server="default-server"
         location="webapp/skull-ecommerce"
         base-permission="OFBTOOLS,SKULL-ECOMMERCE"
-        mount-point="/skull-ecommerce"/>
+        mount-point="/"/>
 </ofbiz-component>

@@ -19,22 +19,15 @@
         </section>
     </screen>
 
-    <!-- 产品列表页面 -->
-    <screen name="listProducts">
+    <!-- 登录页面 -->
+    <screen name="login">
         <section>
             <widgets>
-                <decorator-screen name="ProductListDecorator" location="${parameters.mainDecoratorLocation}">
-                    <decorator-section name="left-options">
+                <decorator-screen name="Skull-EcommerceCommonDecorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
                         <section>
                             <widgets>
-                                <include-screen name="listProducts-left"/>
-                            </widgets>
-                        </section>
-                    </decorator-section>
-                    <decorator-section name="right-options">
-                        <section>
-                            <widgets>
-                                <include-screen name="listProducts-right"/>
+                                <platform-specific><html><html-template location="component://skull-ecommerce/webapp/skull-ecommerce/login.ftl"/></html></platform-specific>
                             </widgets>
                         </section>
                     </decorator-section>
@@ -43,23 +36,28 @@
         </section>
     </screen>
 
-    <!-- 产品列表页面左边 -->
-    <screen name="listProducts-left">
+    <!-- 产品列表页面 -->
+    <screen name="listProducts">
         <section>
             <widgets>
-                <include-screen name="listProducts-breadcrumb"/>
-                <include-screen name="listProducts-screening"/>
-                <include-screen name="listProducts-thumbnail"/>
-                <include-screen name="listProducts-pagination"/>
-            </widgets>
-        </section>
-    </screen>
+                <decorator-screen name="ProductListDecorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="left-options">
+                        <section>
+                            <widgets>
+                                <include-screen name="listProducts-screening"/>
+                                <include-screen name="listProducts-thumbnail"/>
+                                <include-screen name="listProducts-pagination"/>
+                            </widgets>
+                        </section>
+                    </decorator-section>
+                    <decorator-section name="right-options">
+                        <section>
+                            <widgets>
 
-    <!-- 产品列表页面导航 -->
-    <screen name="listProducts-breadcrumb">
-        <section>
-            <widgets>
-                <platform-specific><html><html-template location="component://skull-ecommerce/webapp/skull-ecommerce/product/listProducts-breadcrumb.ftl"/></html></platform-specific>
+                            </widgets>
+                        </section>
+                    </decorator-section>
+                </decorator-screen>
             </widgets>
         </section>
     </screen>
@@ -87,14 +85,6 @@
         <section>
             <widgets>
                 <platform-specific><html><html-template location="component://skull-ecommerce/webapp/skull-ecommerce/product/listProducts-pagination.ftl"/></html></platform-specific>
-            </widgets>
-        </section>
-    </screen>
-
-    <!-- 产品列表页面右边 -->
-    <screen name="listProducts-right">
-        <section>
-            <widgets>
             </widgets>
         </section>
     </screen>

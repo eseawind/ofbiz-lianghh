@@ -20,18 +20,52 @@
     </postprocessor>
     -->
 
+    <!-- Security Request Mappings -->
+    <request-map uri="checkLogin" edit="false">
+        <description>Verify a user is logged in.</description>
+        <security https="true" auth="false"/>
+        <event type="java" path="org.ofbiz.securityext.login.LoginEvents" invoke="storeCheckLogin"/>
+        <response name="success" type="view" value="main"/>
+        <response name="error" type="view" value="login"/>
+    </request-map>
+    <request-map uri="login">
+        <security https="true" auth="false"/>
+        <event type="java" path="org.ofbiz.securityext.login.LoginEvents" invoke="storeLogin"/>
+        <response name="success" type="view" value="main"/>
+        <response name="requirePasswordChange" type="view" value="requirePasswordChange"/>
+        <response name="error" type="view" value="login"/>
+    </request-map>
+    <request-map uri="logout">
+        <security https="true" auth="true"/>
+        <event type="java" path="org.ofbiz.webapp.control.LoginWorker" invoke="logout"/>
+        <response name="success" type="request-redirect" value="main"/>
+        <response name="error" type="view" value="main"/>
+    </request-map>
+    <request-map uri="autoLogout">
+        <security https="true" auth="false"/>
+        <event type="java" path="org.ofbiz.webapp.control.LoginWorker" invoke="autoLoginRemove"/>
+        <response name="success" type="request-redirect" value="main"/>
+        <response name="error" type="view" value="main"/>
+    </request-map>
+    <!-- End of Security Mappings -->
+
     <!-- Request Mappings -->
     <request-map uri="main">
         <response name="success" type="view" value="main"/>
     </request-map>
+
     <!-- product相关 -->
     <request-map uri="listProducts">
+        <security https="true" auth="true"/>
         <response name="success" type="view" value="listProducts"/>
     </request-map>
+    <!-- End of Request Mappings -->
 
     <!-- View Mappings -->
     <view-map name="main" type="screen" page="component://skull-ecommerce/widget/Skull-EcommerceScreens.xml#main"/>
+    <view-map name="login" type="screen" page="component://skull-ecommerce/widget/Skull-EcommerceScreens.xml#login"/>
     <!-- product相关 -->
     <view-map name="listProducts" type="screen" page="component://skull-ecommerce/widget/Skull-EcommerceScreens.xml#listProducts"/>
+    <!-- End of View Mappings -->
 
 </site-conf>

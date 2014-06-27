@@ -38,6 +38,9 @@
 
     <!-- 产品列表页面 -->
     <screen name="listProducts">
+        <actions>
+
+        </actions>
         <section>
             <widgets>
                 <decorator-screen name="ProductListDecorator" location="${parameters.mainDecoratorLocation}">

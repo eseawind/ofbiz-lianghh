@@ -5,9 +5,9 @@
         <input id="userName" name="USERNAME" type="email" class="form-control" placeholder="Email address" required="" autofocus="">
         <input id="password" name="PASSWORD" type="password" class="form-control" placeholder="Password" required="">
         <label class="checkbox">
-            <input type="checkbox" value="remember-me"> Remember me
+            <input type="checkbox" value="remember-me"> 记住我
         </label>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
     </form>
 
 </div>

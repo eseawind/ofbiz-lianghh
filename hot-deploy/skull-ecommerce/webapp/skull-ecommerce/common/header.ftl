@@ -29,21 +29,29 @@
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">梁徽徽<b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">我的账户</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">我的订单</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">我的收藏</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">退出</a></li>
-
-                    </ul>
-                </li>
+                <#if sessionAttributes.autoName?has_content>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            ${sessionAttributes.autoName?html}
+                                <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">我的账户</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">我的订单</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">我的收藏</a></li>
+                            <li class="divider"></li>
+                            <li><a href="<@ofbizUrl>autoLogout</@ofbizUrl>">退出</a></li>
+                        </ul>
+                    </li>
+                <#else>
+                    <li>
+                        <a href="<@ofbizUrl>login</@ofbizUrl>">请登录
+                        </a>
+                    </li>
+                </#if>
             </ul>
-
         </div>
 
     </div>

@@ -20,14 +20,14 @@
     </screen>
 
     <!-- 登录页面 -->
-    <screen name="login">
+    <screen name="loginAndRegister">
         <section>
             <widgets>
                 <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
                     <decorator-section name="body">
                         <section>
                             <widgets>
-                                <platform-specific><html><html-template location="component://skull-ecommerce/webapp/skull-ecommerce/login.ftl"/></html></platform-specific>
+                                <platform-specific><html><html-template location="component://skull-ecommerce/webapp/skull-ecommerce/loginAndRegister.ftl"/></html></platform-specific>
                             </widgets>
                         </section>
                     </decorator-section>

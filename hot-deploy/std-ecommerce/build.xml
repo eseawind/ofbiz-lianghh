@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project name="OFBiz - Skull-Ecommerce Component" default="jar" basedir=".">
+<project name="OFBiz - STD-Ecommerce Component" default="jar" basedir=".">
     <import file="../../common.xml"/>
 
     <!-- ================================================================== -->
@@ -8,9 +8,9 @@
     <!-- ================================================================== -->
 
     <property environment="env"/>
-    <property name="desc" value="Skull-Ecommerce Component"/>
-    <property name="name" value="skull-ecommerce"/>
-    <property name="component-name" value="skull-ecommerce"/>
+    <property name="desc" value="STD-Ecommerce Component"/>
+    <property name="name" value="std-ecommerce"/>
+    <property name="component-name" value="std-ecommerce"/>
     <property name="ofbiz.home.dir" value="../.."/>
     <property name="src.dir" value="src"/>
     <property name="dtd.dir" value="dtd"/>

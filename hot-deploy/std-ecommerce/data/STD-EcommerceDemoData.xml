@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-engine-xml>
+
+    <!-- 产品目录基本数据 -->
+    <ProdCatalog catalogName="STD Catalog" prodCatalogId="STDCatalog" useQuickAdd="Y"/>
+
+    <ProductCategory categoryName="主目录" longDescription="官方网店产品目录" productCategoryId="STDCATALOG" productCategoryTypeId="CATALOG_CATEGORY"/>
+
+    <ProdCatalogCategory prodCatalogCategoryTypeId="PCCT_BROWSE_ROOT" prodCatalogId="STDCatalog" productCategoryId="STDCATALOG" sequenceNum="1"/>
+
+
+
+
+</entity-engine-xml>

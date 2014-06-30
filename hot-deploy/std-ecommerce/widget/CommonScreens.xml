@@ -16,7 +16,7 @@
     <screen name="header">
         <section>
             <widgets>
-                <platform-specific><html><html-template location="component://skull-ecommerce/webapp/skull-ecommerce/header.ftl"/></html></platform-specific>
+                <platform-specific><html><html-template location="component://std-ecommerce/webapp/std-ecommerce/header.ftl"/></html></platform-specific>
             </widgets>
         </section>
     </screen>
@@ -25,24 +25,24 @@
     <screen name="footer">
         <section>
             <widgets>
-                <platform-specific><html><html-template location="component://skull-ecommerce/webapp/skull-ecommerce/footer.ftl"/></html></platform-specific>
+                <platform-specific><html><html-template location="component://std-ecommerce/webapp/std-ecommerce/footer.ftl"/></html></platform-specific>
             </widgets>
         </section>
     </screen>
 
     <!--  -->
-    <screen name="Skull-EcommerceCommonDecorator">
+    <screen name="STD-EcommerceCommonDecorator">
         <section>
             <widgets>
                 <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
                     <decorator-section name="body">
                         <section>
                             <widgets>
-                                <include-screen name="SkullEcommerceCommonHeader"/>
+                                <include-screen name="STDEcommerceCommonHeader"/>
                                 <container style="container">
                                     <decorator-section-include name="body"/>
                                 </container>
-                                <include-screen name="SkullEcommerceCommonFooter"/>
+                                <include-screen name="STDEcommerceCommonFooter"/>
                             </widgets>
                         </section>
                     </decorator-section>
@@ -52,19 +52,19 @@
     </screen>
 
     <!-- common头部 -->
-    <screen name="SkullEcommerceCommonHeader">
+    <screen name="STDEcommerceCommonHeader">
         <section>
             <widgets>
-                <platform-specific><html><html-template location="component://skull-ecommerce/webapp/skull-ecommerce/common/header.ftl"/></html></platform-specific>
+                <platform-specific><html><html-template location="component://std-ecommerce/webapp/std-ecommerce/common/header.ftl"/></html></platform-specific>
             </widgets>
         </section>
     </screen>
 
     <!-- common尾部 -->
-    <screen name="SkullEcommerceCommonFooter">
+    <screen name="STDEcommerceCommonFooter">
         <section>
             <widgets>
-                <platform-specific><html><html-template location="component://skull-ecommerce/webapp/skull-ecommerce/common/footer.ftl"/></html></platform-specific>
+                <platform-specific><html><html-template location="component://std-ecommerce/webapp/std-ecommerce/common/footer.ftl"/></html></platform-specific>
             </widgets>
         </section>
     </screen>
@@ -73,7 +73,7 @@
     <screen name="ProductListDecorator">
         <section>
             <widgets>
-                <decorator-screen name="Skull-EcommerceCommonDecorator" location="${parameters.mainDecoratorLocation}">
+                <decorator-screen name="STD-EcommerceCommonDecorator" location="${parameters.mainDecoratorLocation}">
                     <decorator-section name="body">
                         <section>
                             <widgets>

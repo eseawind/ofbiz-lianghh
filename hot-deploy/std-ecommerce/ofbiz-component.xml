@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ofbiz-component name="skull-ecommerce"
+<ofbiz-component name="std-ecommerce"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/ofbiz-component.xsd">
     <!-- define resource loaders; most common is to use the component resource loader -->
@@ -16,9 +16,9 @@
     <!-- entity resources: model(s), eca(s), group, and data definitions -->
     <entity-resource type="model" reader-name="main" loader="main" location="entitydef/entitymodel.xml"/>
     <!-- <entity-resource type="eca" reader-name="main" loader="main" location="entitydef/eecas.xml"/> -->
-    <entity-resource type="data" reader-name="seed" loader="main" location="data/Skull-EcommerceTypeData.xml"/>
-    <entity-resource type="data" reader-name="seed" loader="main" location="data/Skull-EcommerceSecurityData.xml"/>
-    <entity-resource type="data" reader-name="demo" loader="main" location="data/Skull-EcommerceDemoData.xml"/>
+    <entity-resource type="data" reader-name="seed" loader="main" location="data/STD-EcommerceTypeData.xml"/>
+    <entity-resource type="data" reader-name="seed" loader="main" location="data/STD-EcommerceSecurityData.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/STD-EcommerceDemoData.xml"/>
 
     <!-- service resources: model(s), eca(s) and group definitions -->
     <service-resource type="model" loader="main" location="servicedef/services.xml"/>
@@ -27,13 +27,13 @@
     <service-resource type="group" loader="main" location="servicedef/groups.xml"/>
     -->
 
-    <test-suite loader="main" location="testdef/Skull-EcommerceTests.xml"/>
+    <test-suite loader="main" location="testdef/STD-EcommerceTests.xml"/>
 
     <!-- web applications; will be mounted when using the embedded container -->
-    <webapp name="skull-ecommerce"
-        title="Skull-Ecommerce"
+    <webapp name="std-ecommerce"
+        title="STD-Ecommerce"
         server="default-server"
-        location="webapp/skull-ecommerce"
-        base-permission="OFBTOOLS,SKULL-ECOMMERCE"
+        location="webapp/std-ecommerce"
+        base-permission="OFBTOOLS,STD-ECOMMERCE"
         mount-point="/"/>
 </ofbiz-component>

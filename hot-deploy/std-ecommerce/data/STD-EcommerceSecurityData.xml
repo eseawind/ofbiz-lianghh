@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-engine-xml>
+    <SecurityPermission description="View operations in the STD-Ecommerce Component." permissionId="STD-ECOMMERCE_VIEW"/>
+    <SecurityPermission description="Create operations in the STD-Ecommerce Component." permissionId="STD-ECOMMERCE_CREATE"/>
+    <SecurityPermission description="Update operations in the STD-Ecommerce Component." permissionId="STD-ECOMMERCE_UPDATE"/>
+    <SecurityPermission description="Delete operations in the STD-Ecommerce Component." permissionId="STD-ECOMMERCE_DELETE"/>
+    <SecurityPermission description="ALL operations in the STD-Ecommerce Component." permissionId="STD-ECOMMERCE_ADMIN"/>
+    <SecurityGroupPermission groupId="FULLADMIN" permissionId="STD-ECOMMERCE_ADMIN"/>
+    <SecurityGroupPermission groupId="FLEXADMIN" permissionId="STD-ECOMMERCE_CREATE"/>
+    <SecurityGroupPermission groupId="FLEXADMIN" permissionId="STD-ECOMMERCE_DELETE"/>
+    <SecurityGroupPermission groupId="FLEXADMIN" permissionId="STD-ECOMMERCE_UPDATE"/>
+    <SecurityGroupPermission groupId="FLEXADMIN" permissionId="STD-ECOMMERCE_VIEW"/>
+    <SecurityGroupPermission groupId="VIEWADMIN" permissionId="STD-ECOMMERCE_VIEW"/>
+    <SecurityGroupPermission groupId="BIZADMIN" permissionId="STD-ECOMMERCE_ADMIN"/>
+</entity-engine-xml>

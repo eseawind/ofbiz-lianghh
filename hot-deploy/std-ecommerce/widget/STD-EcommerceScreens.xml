@@ -27,7 +27,7 @@
                     <decorator-section name="body">
                         <section>
                             <widgets>
-                                <platform-specific><html><html-template location="component://std-ecommerce/webapp/std-ecommerce/loginAndRegister.ftl"/></html></platform-specific>
+                                <platform-specific><html><html-template location="component://std-ecommerce/webapp/std-ecommerce/login.ftl"/></html></platform-specific>
                             </widgets>
                         </section>
                     </decorator-section>
@@ -56,7 +56,7 @@
                     <decorator-section name="right-options">
                         <section>
                             <widgets>
-
+                                <include-screen name="listProducts-collapse"/>
                             </widgets>
                         </section>
                     </decorator-section>
@@ -88,6 +88,15 @@
         <section>
             <widgets>
                 <platform-specific><html><html-template location="component://std-ecommerce/webapp/std-ecommerce/product/listProducts-pagination.ftl"/></html></platform-specific>
+            </widgets>
+        </section>
+    </screen>
+
+    <!-- 产品列表页面导航 -->
+    <screen name="listProducts-collapse">
+        <section>
+            <widgets>
+                <platform-specific><html><html-template location="component://std-ecommerce/webapp/std-ecommerce/product/listProducts-collapse.ftl"/></html></platform-specific>
             </widgets>
         </section>
     </screen>

@@ -50,7 +50,7 @@
 
     <!-- View Mappings -->
     <view-map name="main" type="screen" page="component://std-ecommerce/widget/STD-EcommerceScreens.xml#main"/>
-    <view-map name="login" type="screen" page="component://std-ecommerce/widget/STD-EcommerceScreens.xml#login"/>
+    <view-map name="loginAndRegister" type="screen" page="component://std-ecommerce/widget/STD-EcommerceScreens.xml#loginAndRegister"/>
     <!-- product相关 -->
     <view-map name="listProducts" type="screen" page="component://std-ecommerce/widget/STD-EcommerceScreens.xml#listProducts"/>
     <!-- End of View Mappings -->

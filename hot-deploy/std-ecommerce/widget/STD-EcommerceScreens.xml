@@ -27,7 +27,7 @@
                     <decorator-section name="body">
                         <section>
                             <widgets>
-                                <platform-specific><html><html-template location="component://std-ecommerce/webapp/std-ecommerce/login.ftl"/></html></platform-specific>
+                                <platform-specific><html><html-template location="component://std-ecommerce/webapp/std-ecommerce/loginAndRegister.ftl"/></html></platform-specific>
                             </widgets>
                         </section>
                     </decorator-section>

@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <entity-engine-xml>
 
-    <!-- 产品目录基本数据 -->
-    <ProdCatalog catalogName="STD Catalog" prodCatalogId="STDCatalog" useQuickAdd="Y"/>
-
-    <ProductCategory categoryName="主目录" longDescription="官方网店产品目录" productCategoryId="STDCATALOG" productCategoryTypeId="CATALOG_CATEGORY"/>
-
-    <ProdCatalogCategory prodCatalogCategoryTypeId="PCCT_BROWSE_ROOT" prodCatalogId="STDCatalog" productCategoryId="STDCATALOG" sequenceNum="1"/>
-
-
-
+    <!-- 目录 -->
+    <ProdCatalog catalogName="STD 主分类" prodCatalogId="STDCatalog" useQuickAdd="Y"/>
+    <!-- 目录应用店铺 -->
+    <ProductStoreCatalog fromDate="2013-02-28 00:00:00.0" prodCatalogId="STDCatalog" productStoreId="9000" sequenceNum="6"/>
+    <!-- 分类 -->
+    <ProductCategory categoryName="STD主目录" longDescription="STD 官方网店 产品目录" productCategoryId="STDCATALOG" productCategoryTypeId="CATALOG_CATEGORY"/>
+    <!-- 目录分类关联 -->
+    <ProdCatalogCategory prodCatalogCategoryTypeId="PCCT_BROWSE_ROOT" fromDate="2001-05-13 12:00:00.0" prodCatalogId="STDCatalog" productCategoryId="STDCATALOG" sequenceNum="1"/>
+    <!-- 子分类 -->
+    <ProductCategory description="武装战线" productCategoryId="WZZX" productCategoryTypeId="CATALOG_CATEGORY"/>
+    <!-- 子分类与分类关联 -->
+    <ProductCategoryRollup fromDate="2014-01-01 00:00:00.0" parentProductCategoryId="STDCATALOG" productCategoryId="WZZX"/>
+    <!-- 分类与产品关联 -->
+    <ProductCategoryMember fromDate="2014-05-01 00:00:00.0" productCategoryId="WZZX" productId="GZ-1000"/>
+    <ProductCategoryMember fromDate="2014-05-01 00:00:00.0" productCategoryId="WZZX" productId="WG-9943"/>
+    <ProductCategoryMember fromDate="2014-05-01 00:00:00.0" productCategoryId="WZZX" productId="GZ-1006-1"/>
 
 </entity-engine-xml>

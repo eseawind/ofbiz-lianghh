@@ -95,6 +95,9 @@
     <!-- 产品列表页面导航 -->
     <screen name="listProducts-collapse">
         <section>
+            <actions>
+                <script location="component://std-ecommerce/webapp/std-ecommerce/WEB-INF/actions/product/listProducts-collapse.groovy"/>
+            </actions>
             <widgets>
                 <platform-specific><html><html-template location="component://std-ecommerce/webapp/std-ecommerce/product/listProducts-collapse.ftl"/></html></platform-specific>
             </widgets>

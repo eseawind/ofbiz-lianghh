@@ -11,8 +11,21 @@
     <ProdCatalogCategory prodCatalogCategoryTypeId="PCCT_BROWSE_ROOT" fromDate="2001-05-13 12:00:00.0" prodCatalogId="STDCatalog" productCategoryId="STDCategory" sequenceNum="1"/>
     <!-- 子分类 -->
     <ProductCategory description="武装战线" productCategoryId="WZZX" productCategoryTypeId="CATALOG_CATEGORY"/>
+    <ProductCategory description="TEDMAN" productCategoryId="TEDMAN" productCategoryTypeId="CATALOG_CATEGORY"/>
+    <ProductCategory description="爆烈烂漫娘" productCategoryId="BRM" productCategoryTypeId="CATALOG_CATEGORY"/>
+
+    <ProductCategory description="武装战线1" productCategoryId="WZZX1" productCategoryTypeId="CATALOG_CATEGORY"/>
+    <ProductCategory description="武装战线2" productCategoryId="WZZX2" productCategoryTypeId="CATALOG_CATEGORY"/>
+    <ProductCategory description="武装战线3" productCategoryId="WZZX3" productCategoryTypeId="CATALOG_CATEGORY"/>
+
     <!-- 子分类与分类关联 -->
     <ProductCategoryRollup fromDate="2014-01-01 00:00:00.0" parentProductCategoryId="STDCategory" productCategoryId="WZZX"/>
+    <ProductCategoryRollup fromDate="2014-01-01 00:00:00.0" parentProductCategoryId="STDCategory" productCategoryId="TEDMAN"/>
+    <ProductCategoryRollup fromDate="2014-01-01 00:00:00.0" parentProductCategoryId="STDCategory" productCategoryId="BRM"/>
+
+    <ProductCategoryRollup fromDate="2014-01-01 00:00:00.0" parentProductCategoryId="WZZX" productCategoryId="WZZX1"/>
+    <ProductCategoryRollup fromDate="2014-01-01 00:00:00.0" parentProductCategoryId="WZZX" productCategoryId="WZZX2"/>
+    <ProductCategoryRollup fromDate="2014-01-01 00:00:00.0" parentProductCategoryId="WZZX" productCategoryId="WZZX3"/>
     <!-- 分类与产品关联 -->
     <ProductCategoryMember fromDate="2014-05-01 00:00:00.0" productCategoryId="WZZX" productId="GZ-1000"/>
     <ProductCategoryMember fromDate="2014-05-01 00:00:00.0" productCategoryId="WZZX" productId="WG-9943"/>

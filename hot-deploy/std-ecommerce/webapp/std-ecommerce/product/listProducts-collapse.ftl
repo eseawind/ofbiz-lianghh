@@ -4,13 +4,13 @@
 
         <div class="panel panel-default">
             <div class="panel-heading">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                <a data-toggle="collapse" data-parent="#accordion" href="#${(productCategory.productCategoryId)!}">
                     <h4 class="panel-title">
                         ${(productCategory.description)!}
                     </h4>
                 </a>
             </div>
-            <div id="collapseOne" class="panel-collapse collapse in">
+            <div id="${(productCategory.productCategoryId)!}" class="panel-collapse collapse">
                 <div class="panel-body">
                     子分类
                 </div>

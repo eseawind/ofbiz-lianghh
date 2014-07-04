@@ -4,7 +4,8 @@ import sun.security.util.Debug
 
 productCategoryId = parameters.productCategoryId
 
-if(productCategoryId){
+//TODO 暂时默认显示武装战线系列的服装
+if(!productCategoryId){
     productCategoryId = "WZZX"
 }
 

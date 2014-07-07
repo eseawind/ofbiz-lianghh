@@ -21,5 +21,7 @@
     <ProductCategoryMember fromDate="2014-05-01 00:00:00.0" productCategoryId="WZZX" productId="GZ-1000"/>
     <ProductCategoryMember fromDate="2014-05-01 00:00:00.0" productCategoryId="WZZX" productId="WG-9943"/>
     <ProductCategoryMember fromDate="2014-05-01 00:00:00.0" productCategoryId="WZZX" productId="GZ-1006-1"/>
+    <ProductCategoryMember fromDate="2014-05-01 00:00:00.0" productCategoryId="TEDMAN" productId="GZ-1000"/>
+    <ProductCategoryMember fromDate="2014-05-01 00:00:00.0" productCategoryId="BRM" productId="WG-9943"/>
 
 </entity-engine-xml>

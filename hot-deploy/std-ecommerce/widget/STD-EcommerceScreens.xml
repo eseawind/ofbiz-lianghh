@@ -107,4 +107,43 @@
         </section>
     </screen>
 
+    <!-- 产品列表页面 -->
+    <screen name="productDetail">
+        <actions>
+        </actions>
+        <section>
+            <widgets>
+                <decorator-screen name="ProductListDecorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="left-options">
+                        <section>
+                            <widgets>
+                                <include-screen name="productDetail-detail"/>
+                            </widgets>
+                        </section>
+                    </decorator-section>
+                    <decorator-section name="right-options">
+                        <section>
+                            <widgets>
+                                <include-screen name="listProducts-collapse"/>
+                            </widgets>
+                        </section>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+
+    <!-- 产品详细页面 -->
+    <screen name="productDetail-detail">
+        <section>
+            <actions>
+                <set field="productId" from-field="parameters.productId" global="true"/>
+                <script location="component://std-ecommerce/webapp/std-ecommerce/WEB-INF/actions/product/productDetail-detail.groovy"/>
+            </actions>
+            <widgets>
+                <platform-specific><html><html-template location="component://std-ecommerce/webapp/std-ecommerce/product/productDetail-detail.ftl"/></html></platform-specific>
+            </widgets>
+        </section>
+    </screen>
+
 </screens>

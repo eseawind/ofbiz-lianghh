@@ -1,2 +1,2 @@
 #ofbiz-lianghh
-基于ofbiz框架的项目
+ofbiz版本12.04.03

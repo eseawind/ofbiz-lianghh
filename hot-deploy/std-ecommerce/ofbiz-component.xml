@@ -35,5 +35,5 @@
         server="default-server"
         location="webapp/std-ecommerce"
         base-permission="OFBTOOLS,STD-ECOMMERCE"
-        mount-point="/"/>
+        mount-point="/std-ecommerce"/>
 </ofbiz-component>

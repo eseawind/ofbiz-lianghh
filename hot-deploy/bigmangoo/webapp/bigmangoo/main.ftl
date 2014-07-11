@@ -10,11 +10,11 @@
     <title>大芒果</title>
 
     <!-- 新 Bootstrap 核心 CSS 文件 -->
-    <link rel="stylesheet" href="<@ofbizContentUrl>/images/bootstrap/css/bootstrap.min.css</@ofbizContentUrl>">
+    <link rel="stylesheet" href="/resource/images/bootstrap/css/bootstrap.min.css">
 
     <!-- 全局CSS样式 -->
-    <link href="/bigmangoo/images/css/stylish-portfolio.css" rel="stylesheet">
-    <link href="/bigmangoo/images/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/resource/images/bigmangoo/css/stylish-portfolio.css" rel="stylesheet">
+    <link href="/resource/images/bigmangoo/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
 </head>
 
@@ -130,7 +130,7 @@
             <div class="col-md-4 col-md-offset-2 text-center">
                 <div class="portfolio-item">
                     <a href="#">
-                        <img class="img-portfolio img-responsive img-circle" src="/bigmangoo/images/images/portfolio-1.jpg">
+                        <img class="img-portfolio img-responsive img-circle" src="/resource/images/bigmangoo/images/portfolio-1.jpg">
                     </a>
                     <h4>Toby</h4>
                 </div>
@@ -178,7 +178,7 @@
 
 <!-- JavaScript -->
 <script src="<@ofbizContentUrl>/images/jquery/jquery-1.7.min.js</@ofbizContentUrl>"></script>
-<script src="<@ofbizContentUrl>/images/bootstrap/js/bootstrap.min.js</@ofbizContentUrl>"></script>
+<script src="/resource/images/bootstrap/js/bootstrap.min.js"></script>
 
 <!-- Custom JavaScript for the Side Menu and Smooth Scrolling -->
 <script>

@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <entity-engine-xml>
 
+    <!-- 店铺数据 -->
+    <ProductStore addToCartRemoveIncompat="Y" addToCartReplaceUpsell="Y" allowPassword="Y" autoApproveInvoice="Y"
+                  autoApproveOrder="Y" autoApproveReviews="N" autoInvoiceDigitalItems="Y" autoOrderCcTryExp="Y"
+                  autoOrderCcTryLaterNsf="Y" autoOrderCcTryOtherCards="Y" autoSaveCart="N" balanceResOnOrderCreation="N"
+                  checkGcBalance="N" checkInventory="Y" defaultCurrencyUomId="CNY" digitalItemApprovedStatus="ITEM_APPROVED"
+                  enableAutoSuggestionList="N" enableDigProdUpload="N" explodeOrderItems="N" headerApprovedStatus="ORDER_APPROVED"
+                  headerCancelStatus="ORDER_CANCELLED" headerDeclinedStatus="ORDER_REJECTED" isDemoStore="Y" isImmediatelyFulfilled="N"
+                  itemApprovedStatus="ITEM_APPROVED" itemCancelStatus="ITEM_CANCELLED" itemDeclinedStatus="ITEM_REJECTED" managedByLot="N"
+                  manualAuthIsCapture="N" oneInventoryFacility="Y" prodSearchExcludeVariants="Y" productStoreId="10000" prorateShipping="Y"
+                  prorateTaxes="Y" reqShipAddrForDigItems="Y" requireCustomerRole="N" requireInventory="N" reserveInventory="Y"
+                  retryFailedAuths="Y" selectPaymentTypePerItem="N" shipIfCaptureFails="Y" showCheckoutGiftOptions="Y" showOutOfStockProducts="Y"
+                  showPricesWithVatTax="N" showTaxIsExempt="Y" splitPayPrefPerShpGrp="Y" storeCreditAccountEnumId="FIN_ACCOUNT"
+                  storeName="STD 官方店铺" usePrimaryEmailUsername="N" viewCartOnAdd="N" visualThemeId="FLAT_GREY"/>
     <!-- 目录 -->
     <ProdCatalog catalogName="STD 目录" prodCatalogId="STDCatalog" useQuickAdd="Y"/>
     <!-- 目录应用店铺 -->
-    <ProductStoreCatalog fromDate="2013-02-28 00:00:00.0" prodCatalogId="STDCatalog" productStoreId="9000" sequenceNum="6"/>
+    <ProductStoreCatalog fromDate="2013-02-28 00:00:00.0" prodCatalogId="STDCatalog" productStoreId="10000" sequenceNum="6"/>
     <!-- 分类 -->
     <ProductCategory categoryName="STD 主分类" longDescription="STD 官方网店 产品目录" productCategoryId="STDCategory" productCategoryTypeId="CATALOG_CATEGORY"/>
     <!-- 目录分类关联 -->
@@ -18,10 +31,6 @@
     <ProductCategoryRollup fromDate="2014-01-01 00:00:00.0" parentProductCategoryId="STDCategory" productCategoryId="TEDMAN"/>
     <ProductCategoryRollup fromDate="2014-01-01 00:00:00.0" parentProductCategoryId="STDCategory" productCategoryId="BRM"/>
     <!-- 分类与产品关联 -->
-    <ProductCategoryMember fromDate="2014-05-01 00:00:00.0" productCategoryId="WZZX" productId="GZ-1000"/>
-    <ProductCategoryMember fromDate="2014-05-01 00:00:00.0" productCategoryId="WZZX" productId="WG-9943"/>
-    <ProductCategoryMember fromDate="2014-05-01 00:00:00.0" productCategoryId="WZZX" productId="GZ-1006-1"/>
-    <ProductCategoryMember fromDate="2014-05-01 00:00:00.0" productCategoryId="TEDMAN" productId="GZ-1000"/>
-    <ProductCategoryMember fromDate="2014-05-01 00:00:00.0" productCategoryId="BRM" productId="WG-9943"/>
+    <!--<ProductCategoryMember fromDate="2014-05-01 00:00:00.0" productCategoryId="WZZX" productId="GZ-1000"/>-->
 
 </entity-engine-xml>

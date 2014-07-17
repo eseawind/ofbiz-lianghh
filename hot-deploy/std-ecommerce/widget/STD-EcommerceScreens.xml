@@ -6,7 +6,7 @@
     <screen name="main">
         <section>
             <widgets>
-                <decorator-screen name="STD-EcommerceCommonDecorator" location="${parameters.mainDecoratorLocation}">
+                <decorator-screen name="CommonDecorator" location="${parameters.mainDecoratorLocation}">
                     <decorator-section name="body">
                         <section>
                             <widgets>

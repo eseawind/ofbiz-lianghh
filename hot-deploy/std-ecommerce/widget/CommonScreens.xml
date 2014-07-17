@@ -30,18 +30,18 @@
         </section>
     </screen>
 
-    <screen name="STD-EcommerceCommonDecorator">
+    <screen name="CommonDecorator">
         <section>
             <widgets>
                 <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
                     <decorator-section name="body">
                         <section>
                             <widgets>
-                                <include-screen name="STDEcommerceCommonHeader"/>
+                                <include-screen name="CommonHeader"/>
                                 <container style="container">
                                     <decorator-section-include name="body"/>
                                 </container>
-                                <include-screen name="STDEcommerceCommonFooter"/>
+                                <include-screen name="CommonFooter"/>
                             </widgets>
                         </section>
                     </decorator-section>
@@ -51,7 +51,7 @@
     </screen>
 
     <!-- common头部 -->
-    <screen name="STDEcommerceCommonHeader">
+    <screen name="CommonHeader">
         <section>
             <widgets>
                 <platform-specific><html><html-template location="component://std-ecommerce/webapp/std-ecommerce/common/header.ftl"/></html></platform-specific>
@@ -60,7 +60,7 @@
     </screen>
 
     <!-- common尾部 -->
-    <screen name="STDEcommerceCommonFooter">
+    <screen name="CommonFooter">
         <section>
             <widgets>
                 <platform-specific><html><html-template location="component://std-ecommerce/webapp/std-ecommerce/common/footer.ftl"/></html></platform-specific>
@@ -72,7 +72,7 @@
     <screen name="ProductListDecorator">
         <section>
             <widgets>
-                <decorator-screen name="STD-EcommerceCommonDecorator" location="${parameters.mainDecoratorLocation}">
+                <decorator-screen name="CommonDecorator" location="${parameters.mainDecoratorLocation}">
                     <decorator-section name="body">
                         <section>
                             <widgets>

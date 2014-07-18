@@ -2,18 +2,9 @@
 <entity-engine-xml>
 
     <!-- 店铺数据 -->
-    <ProductStore addToCartRemoveIncompat="Y" addToCartReplaceUpsell="Y" allowPassword="Y" autoApproveInvoice="Y"
-                  autoApproveOrder="Y" autoApproveReviews="N" autoInvoiceDigitalItems="Y" autoOrderCcTryExp="Y"
-                  autoOrderCcTryLaterNsf="Y" autoOrderCcTryOtherCards="Y" autoSaveCart="N" balanceResOnOrderCreation="N"
-                  checkGcBalance="N" checkInventory="Y" defaultCurrencyUomId="CNY" digitalItemApprovedStatus="ITEM_APPROVED"
-                  enableAutoSuggestionList="N" enableDigProdUpload="N" explodeOrderItems="N" headerApprovedStatus="ORDER_APPROVED"
-                  headerCancelStatus="ORDER_CANCELLED" headerDeclinedStatus="ORDER_REJECTED" isDemoStore="Y" isImmediatelyFulfilled="N"
-                  itemApprovedStatus="ITEM_APPROVED" itemCancelStatus="ITEM_CANCELLED" itemDeclinedStatus="ITEM_REJECTED" managedByLot="N"
-                  manualAuthIsCapture="N" oneInventoryFacility="Y" prodSearchExcludeVariants="Y" productStoreId="10000" prorateShipping="Y"
-                  prorateTaxes="Y" reqShipAddrForDigItems="Y" requireCustomerRole="N" requireInventory="N" reserveInventory="Y"
-                  retryFailedAuths="Y" selectPaymentTypePerItem="N" shipIfCaptureFails="Y" showCheckoutGiftOptions="Y" showOutOfStockProducts="Y"
-                  showPricesWithVatTax="N" showTaxIsExempt="Y" splitPayPrefPerShpGrp="Y" storeCreditAccountEnumId="FIN_ACCOUNT"
-                  storeName="STD 官方店铺" usePrimaryEmailUsername="N" viewCartOnAdd="N" visualThemeId="FLAT_GREY"/>
+    <ProductStore productStoreId="STDStore" storeName="STD官方网店"/>
+    <!-- 网站数据 -->
+    <WebSite webSiteId="STDWebStore" siteName="STD官方网站" productStoreId="STDStore" visualThemeSetId="ECOMMERCE"/>
     <!-- 目录 -->
     <ProdCatalog catalogName="STD 目录" prodCatalogId="STDCatalog" useQuickAdd="Y"/>
     <!-- 目录应用店铺 -->

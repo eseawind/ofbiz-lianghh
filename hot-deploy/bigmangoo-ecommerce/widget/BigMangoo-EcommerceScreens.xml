@@ -38,10 +38,9 @@
 
     <!-- 产品列表页面 -->
     <screen name="listProducts">
-        <actions>
-
-        </actions>
         <section>
+            <actions>
+            </actions>
             <widgets>
                 <decorator-screen name="ProductListDecorator" location="${parameters.mainDecoratorLocation}">
                     <decorator-section name="left-options">
@@ -61,6 +60,18 @@
                         </section>
                     </decorator-section>
                 </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+
+    <!-- 产品列表页面导航 -->
+    <screen name="listProducts-collapse">
+        <section>
+            <actions>
+                <script location="component://bigmangoo-ecommerce/webapp/bigmangoo-ecommerce/WEB-INF/actions/product/listProducts-collapse.groovy"/>
+            </actions>
+            <widgets>
+                <platform-specific><html><html-template location="component://bigmangoo-ecommerce/webapp/bigmangoo-ecommerce/product/listProducts-collapse.ftl"/></html></platform-specific>
             </widgets>
         </section>
     </screen>
@@ -95,23 +106,11 @@
         </section>
     </screen>
 
-    <!-- 产品列表页面导航 -->
-    <screen name="listProducts-collapse">
-        <section>
-            <actions>
-                <script location="component://bigmangoo-ecommerce/webapp/bigmangoo-ecommerce/WEB-INF/actions/product/listProducts-collapse.groovy"/>
-            </actions>
-            <widgets>
-                <platform-specific><html><html-template location="component://bigmangoo-ecommerce/webapp/bigmangoo-ecommerce/product/listProducts-collapse.ftl"/></html></platform-specific>
-            </widgets>
-        </section>
-    </screen>
-
     <!-- 产品列表页面 -->
     <screen name="productDetail">
-        <actions>
-        </actions>
         <section>
+            <actions>
+            </actions>
             <widgets>
                 <decorator-screen name="ProductListDecorator" location="${parameters.mainDecoratorLocation}">
                     <decorator-section name="left-options">

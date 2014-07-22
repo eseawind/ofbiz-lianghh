@@ -15,7 +15,7 @@
     <screen name="header">
         <section>
             <widgets>
-                <platform-specific><html><html-template location="component://std-ecommerce/webapp/std-ecommerce/header.ftl"/></html></platform-specific>
+                <platform-specific><html><html-template location="component://bigmangoo-ecommerce/webapp/bigmangoo-ecommerce/header.ftl"/></html></platform-specific>
             </widgets>
         </section>
     </screen>
@@ -24,7 +24,7 @@
     <screen name="footer">
         <section>
             <widgets>
-                <platform-specific><html><html-template location="component://std-ecommerce/webapp/std-ecommerce/footer.ftl"/></html></platform-specific>
+                <platform-specific><html><html-template location="component://bigmangoo-ecommerce/webapp/bigmangoo-ecommerce/footer.ftl"/></html></platform-specific>
             </widgets>
         </section>
     </screen>
@@ -53,7 +53,7 @@
     <screen name="CommonHeader">
         <section>
             <widgets>
-                <platform-specific><html><html-template location="component://std-ecommerce/webapp/std-ecommerce/common/header.ftl"/></html></platform-specific>
+                <platform-specific><html><html-template location="component://bigmangoo-ecommerce/webapp/bigmangoo-ecommerce/common/header.ftl"/></html></platform-specific>
             </widgets>
         </section>
     </screen>
@@ -62,7 +62,7 @@
     <screen name="CommonFooter">
         <section>
             <widgets>
-                <platform-specific><html><html-template location="component://std-ecommerce/webapp/std-ecommerce/common/footer.ftl"/></html></platform-specific>
+                <platform-specific><html><html-template location="component://bigmangoo-ecommerce/webapp/bigmangoo-ecommerce/common/footer.ftl"/></html></platform-specific>
             </widgets>
         </section>
     </screen>
@@ -76,10 +76,10 @@
                         <section>
                             <widgets>
                                 <container style="row">
-                                    <container style="col-xs-12 col-md-8">
+                                    <container style="col-xs-3 col-md-2">
                                         <decorator-section-include name="left-options"/>
                                     </container>
-                                    <container style="col-xs-6 col-md-4">
+                                    <container style="col-xs-12 col-md-8">
                                         <decorator-section-include name="right-options"/>
                                     </container>
                                 </container>

@@ -43,21 +43,19 @@
     </request-map>
     <!-- product相关 -->
     <request-map uri="listProducts">
-        <security https="true" auth="true"/>
         <response name="success" type="view" value="listProducts"/>
     </request-map>
     <request-map uri="productDetail">
-        <security https="true" auth="true"/>
         <response name="success" type="view" value="productDetail"/>
     </request-map>
     <!-- End of Request Mappings -->
 
     <!-- View Mappings -->
-    <view-map name="main" type="screen" page="component://std-ecommerce/widget/STD-EcommerceScreens.xml#main"/>
-    <view-map name="loginAndRegister" type="screen" page="component://std-ecommerce/widget/STD-EcommerceScreens.xml#loginAndRegister"/>
+    <view-map name="main" type="screen" page="component://bigmangoo-ecommerce/widget/BigMangoo-EcommerceScreens.xml#main"/>
+    <view-map name="loginAndRegister" type="screen" page="component://bigmangoo-ecommerce/widget/BigMangoo-EcommerceScreens.xml#loginAndRegister"/>
     <!-- product相关 -->
-    <view-map name="listProducts" type="screen" page="component://std-ecommerce/widget/STD-EcommerceScreens.xml#listProducts"/>
-    <view-map name="productDetail" type="screen" page="component://std-ecommerce/widget/STD-EcommerceScreens.xml#productDetail"/>
+    <view-map name="listProducts" type="screen" page="component://bigmangoo-ecommerce/widget/BigMangoo-EcommerceScreens.xml#listProducts"/>
+    <view-map name="productDetail" type="screen" page="component://bigmangoo-ecommerce/widget/BigMangoo-EcommerceScreens.xml#productDetail"/>
     <!-- End of View Mappings -->
 
 </site-conf>

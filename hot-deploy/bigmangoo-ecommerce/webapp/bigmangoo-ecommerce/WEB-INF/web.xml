@@ -6,7 +6,7 @@
 
     <context-param>
         <param-name>webSiteId</param-name>
-        <param-value>bigmangooSite</param-value>
+        <param-value>BigMangooSite</param-value>
         <description>A unique ID used to look up the WebSite entity</description>
     </context-param>
     <context-param>

@@ -1,7 +1,12 @@
-import org.ofbiz.entity.util.EntityUtil
 import javolution.util.FastList
+import org.ofbiz.product.catalog.*
 
-prodCatalogCategorys = EntityUtil.filterByDate(delegator.findByAndCache("ProdCatalogCategory",[prodCatalogId:"STDCatalog",prodCatalogCategoryTypeId:"PCCT_BROWSE_ROOT"]))
+def module = "listProducts-collapse.groovy"
+
+//获得当前商品的目录ID
+catalogId = CatalogWorker.getCurrentCatalogId(request)
+
+prodCatalogCategorys = EntityUtil.filterByDate(delegator.findByAndCache("ProdCatalogCategory",[prodCatalogId:catalogId]))
 prodCatalogCategory = EntityUtil.getFirst(prodCatalogCategorys)
 
 /**

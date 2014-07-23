@@ -1,27 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <entity-engine-xml>
 
-    <!-- 店铺数据 -->
-    <ProductStore productStoreId="STDStore" storeName="STD官方网店"/>
-    <!-- 网站数据 -->
-    <WebSite webSiteId="STDWebStore" siteName="STD官方网站" productStoreId="STDStore" visualThemeSetId="ECOMMERCE"/>
-    <!-- 目录 -->
-    <ProdCatalog catalogName="STD 目录" prodCatalogId="STDCatalog" useQuickAdd="Y"/>
-    <!-- 目录应用店铺 -->
-    <ProductStoreCatalog fromDate="2013-02-28 00:00:00.0" prodCatalogId="STDCatalog" productStoreId="10000" sequenceNum="6"/>
-    <!-- 分类 -->
-    <ProductCategory categoryName="STD 主分类" longDescription="STD 官方网店 产品目录" productCategoryId="STDCategory" productCategoryTypeId="CATALOG_CATEGORY"/>
-    <!-- 目录分类关联 -->
-    <ProdCatalogCategory prodCatalogCategoryTypeId="PCCT_BROWSE_ROOT" fromDate="2001-05-13 12:00:00.0" prodCatalogId="STDCatalog" productCategoryId="STDCategory" sequenceNum="1"/>
-    <!-- 子分类 -->
-    <ProductCategory description="武装战线" productCategoryId="WZZX" productCategoryTypeId="CATALOG_CATEGORY"/>
-    <ProductCategory description="TEDMAN" productCategoryId="TEDMAN" productCategoryTypeId="CATALOG_CATEGORY"/>
-    <ProductCategory description="爆烈烂漫娘" productCategoryId="BRM" productCategoryTypeId="CATALOG_CATEGORY"/>
-    <!-- 子分类与分类关联 -->
-    <ProductCategoryRollup fromDate="2014-01-01 00:00:00.0" parentProductCategoryId="STDCategory" productCategoryId="WZZX"/>
-    <ProductCategoryRollup fromDate="2014-01-01 00:00:00.0" parentProductCategoryId="STDCategory" productCategoryId="TEDMAN"/>
-    <ProductCategoryRollup fromDate="2014-01-01 00:00:00.0" parentProductCategoryId="STDCategory" productCategoryId="BRM"/>
-    <!-- 分类与产品关联 -->
-    <!--<ProductCategoryMember fromDate="2014-05-01 00:00:00.0" productCategoryId="WZZX" productId="GZ-1000"/>-->
-
 </entity-engine-xml>

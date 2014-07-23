@@ -35,5 +35,5 @@
         server="default-server"
         location="webapp/bigmangoo-ecommerce"
         base-permission="OFBTOOLS,BIGMANGOO-ECOMMERCE"
-        mount-point="/bigmangoo-ecommerce"/>
+        mount-point="/"/>
 </ofbiz-component>

@@ -9,14 +9,14 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="<@ofbizUrl>main</@ofbizUrl>">项目名称</a>
+            <a class="navbar-brand" href="<@ofbizUrl>main</@ofbizUrl>">大芒果网</a>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
             <form class="navbar-form navbar-left" role="search" action="<@ofbizUrl>listProducts</@ofbizUrl>">
                 <div class="form-group">
-                    <input id="searchWord" name="SEARCHWORD" type="text" class="form-control" placeholder="杜雷斯">
+                    <input id="searchWord" name="SEARCHWORD" type="text" class="form-control" placeholder="输入产品名称">
                 </div>
                 <button type="submit" class="btn btn-default">搜索</button>
             </form>

@@ -5,6 +5,9 @@
     <!-- 主页面 -->
     <screen name="main">
         <section>
+            <actions>
+                <script location="component://bigmangoo-ecommerce/webapp/bigmangoo-ecommerce/WEB-INF/actions/main.groovy"/>
+            </actions>
             <widgets>
                 <decorator-screen name="CommonDecorator" location="${parameters.mainDecoratorLocation}">
                     <decorator-section name="body">

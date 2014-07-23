@@ -35,5 +35,5 @@
         server="default-server"
         location="webapp/bigmangoo"
         base-permission="OFBTOOLS,BIGMANGOO"
-        mount-point="/"/>
+        mount-point="/bigmangoo"/>
 </ofbiz-component>

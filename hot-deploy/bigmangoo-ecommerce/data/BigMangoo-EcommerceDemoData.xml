@@ -1,31 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <entity-engine-xml>
 
-    <!-- 店铺 -->
-    <ProductStore productStoreId="BigMangooStore" companyName="大芒果工作室" storeName="大芒果网店" allowPassword="Y" autoApproveInvoice="Y"
-                  checkInventory="Y" daysToCancelNonPay="30" defaultCurrencyUomId="CNY" balanceResOnOrderCreation="Y"
-                  defaultLocaleString="zh_CN" defaultSalesChannelEnumId="WEB_SALES_CHANNEL" digitalItemApprovedStatus="ITEM_APPROVED"
-                  explodeOrderItems="N" headerApprovedStatus="ORDER_APPROVED" headerCancelStatus="ORDER_CANCELLED"
-                  headerDeclinedStatus="ORDER_REJECTED" inventoryFacilityId="WebStoreWarehouse" itemApprovedStatus="ITEM_APPROVED"
-                  itemCancelStatus="ITEM_CANCELLED" itemDeclinedStatus="ITEM_REJECTED" oneInventoryFacility="Y" orderNumberPrefix="WS"
-                  payToPartyId="Company" prodSearchExcludeVariants="Y" prorateShipping="Y" prorateTaxes="Y"
-                  reqReturnInventoryReceive="N" requireInventory="N" reserveInventory="Y" reserveOrderEnumId="INVRO_FIFO_REC"
-                  retryFailedAuths="Y" shipIfCaptureFails="Y" showOutOfStockProducts="Y" storeCreditAccountEnumId="FIN_ACCOUNT"
-                  storeCreditValidDays="90" autoApproveOrder="Y"/>
-
-    <!-- 网站 -->
-    <WebSite allowProductStoreChange="Y" productStoreId="BigMangooStore" siteName="大芒果 官方网站" webSiteId="BigMangooSite"/>
-
-    <!-- 目录 -->
-    <ProdCatalog catalogName="大芒果目录" prodCatalogId="BigMangooCatalog" useQuickAdd="Y"/>
-
-    <!-- 店铺目录关联 -->
-    <ProductStoreCatalog prodCatalogId="BigMangooCatalog" productStoreId="BigMangooStore" fromDate="2001-05-13 12:00:00.0" sequenceNum="1"/>
-
-    <!-- 分类 -->
-    <ProductCategory categoryName="大芒果主分类" productCategoryId="BMROOTCategory" productCategoryTypeId="CATALOG_CATEGORY"/>
-
-    <!-- 目录分类关联 -->
-    <ProdCatalogCategory prodCatalogId="BigMangooCatalog" productCategoryId="BMROOTCategory" sequenceNum="1" fromDate="2001-05-13 12:00:00.0" prodCatalogCategoryTypeId="PCCT_BROWSE_ROOT"/>
-
 </entity-engine-xml>

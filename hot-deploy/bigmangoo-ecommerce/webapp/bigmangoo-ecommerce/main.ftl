@@ -12,7 +12,9 @@
         <div class="carousel-inner" role="listbox">
             <#list promoAndPics as promoAndPic>
                 <div class="item ${(promoAndPic.flag)!}">
-                    <img class="container" src="${(promoAndPic.productPromoPic)!}" alt="">
+                    <a href="<@ofbizUrl>listProducts?productPromoId=${(promoAndPic.productPromoId)!}</@ofbizUrl>">
+                        <img class="container" src="${(promoAndPic.productPromoPic)!}" alt="">
+                    </a>
                     <div class="carousel-caption">
                         <h3>${(promoAndPic.promoName)!}</h3>
                     </div>

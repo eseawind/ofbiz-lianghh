@@ -17,7 +17,9 @@
                 <set field="applicationTitle" value="${uiLabelMap.BigMangooApplication}" global="true"/>
             </actions>
             <widgets>
-                <include-screen name="ApplicationDecorator" location="component://commonext/widget/CommonScreens.xml"/>
+                <platform-specific><html><html-template location="component://bigmangoo/webapp/bigmangoo/header.ftl"/></html></platform-specific>
+                <decorator-section-include name="body"/>
+                <platform-specific><html><html-template location="component://bigmangoo/webapp/bigmangoo/footer.ftl"/></html></platform-specific>
             </widgets>
         </section>
     </screen>
@@ -45,4 +47,5 @@
             </widgets>
         </section>
     </screen>
+
 </screens>

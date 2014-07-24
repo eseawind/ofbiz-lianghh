@@ -10,6 +10,7 @@
             <widgets>
                 <decorator-screen name="BigMangooCommonDecorator" location="${parameters.mainDecoratorLocation}">
                     <decorator-section name="body">
+                        <label style="h3">main</label>
                     </decorator-section>
                 </decorator-screen>
             </widgets>

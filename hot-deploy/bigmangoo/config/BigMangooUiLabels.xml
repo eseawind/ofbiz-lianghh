@@ -6,6 +6,7 @@
     </property>
     <property key="BigMangooCompanyName">
         <value xml:lang="en">OFBiz: BigMangoo</value>
+        <value xml:lang="zh">大芒果公司</value>
     </property>
     <property key="BigMangooCompanySubtitle">
         <value xml:lang="en">Part of the Open For Business Family of Open Source Software</value>

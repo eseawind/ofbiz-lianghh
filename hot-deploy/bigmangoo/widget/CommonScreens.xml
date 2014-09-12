@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screens xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/widget-screen.xsd">
+
+    <screen name="BigMangooCommonDecorator">
+        <section>
+            <actions>
+                <set field="layoutSettings.styleSheets[]" value="/bigmangoo/images/stylesheets/bootstrap.min.css" global="true"/>
+                <set field="layoutSettings.styleSheets[]" value="/bigmangoo/images/stylesheets/bootstrap-theme.min.css" global="true"/>
+                <set field="layoutSettings.javaScripts[]" value="/bigmangoo/images/javascripts/jquery.min.js" global="true"/>
+                <set field="layoutSettings.javaScripts[]" value="/bigmangoo/images/javascripts/bootstrap.min.js" global="true"/>
+            </actions>
+            <widgets>
+                <section>
+                    <condition>
+                        <if-has-permission permission="BIGMANGOO" action="_VIEW"/>
+                    </condition>
+                    <widgets>
+                        <include-screen name="CommonHeader"/>
+                        <decorator-section-include name="body"/>
+                        <include-screen name="CommonFooter"/>
+                    </widgets>
+                    <fail-widgets>
+                        <label style="h3">${uiLabelMap.BigMangooViewPermissionError}</label>
+                    </fail-widgets>
+                </section>
+            </widgets>
+        </section>
+    </screen>
+
+    <screen name="CommonHeader">
+        <section>
+            <widgets>
+                <platform-specific>
+                    <html>
+                        <html-template location="component://bigmangoo/webapp/bigmangoo/common/header.ftl"/>
+                    </html>
+                </platform-specific>
+            </widgets>
+        </section>
+    </screen>
+
+    <screen name="CommonFooter">
+        <section>
+            <widgets>
+                <platform-specific>
+                    <html>
+                        <html-template location="component://bigmangoo/webapp/bigmangoo/common/footer.ftl"/>
+                    </html>
+                </platform-specific>
+            </widgets>
+        </section>
+    </screen>
+</screens>

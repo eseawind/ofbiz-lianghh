@@ -416,6 +416,7 @@ under the License.
             <jvmarg value="${memory.initial.param}"/>
             <jvmarg value="${memory.max.param}"/>
             <jvmarg value="${memory.maxpermsize.param}"/>
+            <jvmarg value="-Dfile.encoding=UTF-8"/>
             <arg value="start"/>
             <arg value="-portoffset=${portoffset}"/>
         </java>
@@ -436,6 +437,7 @@ under the License.
             <jvmarg value="${memory.initial.param}"/>
             <jvmarg value="${memory.max.param}"/>
             <jvmarg value="${memory.maxpermsize.param}"/>
+            <jvmarg value="-Dfile.encoding=UTF-8"/>
             <jvmarg value="-Xnoagent"/>
             <jvmarg value="-Djava.compiler=NONE"/>
             <jvmarg value="-Xdebug"/>
